@@ -16,7 +16,7 @@ const items = [
   },
   {
     id: 3,
-    question: "Can I use Frontend Mentor projects in my portfolio",
+    question: "Can I use Frontend Mentor projects in my portfolio?",
     answer:
       "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and Javascript. It's suitable for all levels and ideal for portfolio building.",
   },
@@ -37,14 +37,17 @@ const AccordionContainer = () => {
     <>
       <div className='accordion'>
         {items.map((el, index) => (
-          <AccordionItem
-            handleClick={handleClick}
-            question={el.question}
-            answer={el.answer}
-            key={index}
-            id={el.id}
-            active={active}
-          />
+          <>
+            <AccordionItem
+              handleClick={handleClick}
+              question={el.question}
+              answer={el.answer}
+              key={index}
+              id={el.id}
+              active={active}
+            />
+            {items.length === index + 1 ? null : <hr />}
+          </>
         ))}
       </div>
     </>

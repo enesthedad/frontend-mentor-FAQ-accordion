@@ -3,6 +3,9 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+:root {
+  font-size: 16px;
+}
 .App {
   background-color: #f9eeff;
   height: 100vh;
@@ -14,7 +17,7 @@
 }
 .background {
   background-image: url("./assets/background-pattern-desktop.svg");
-  height: 320px;
+  height: 20rem;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,44 +28,131 @@
 }
 .card {
   z-index: 600;
-  border-radius: 15px;
-  width: 600px;
+  border-radius: 1rem;
+  width: 37.5rem;
   background-color: #fff;
-  padding-bottom: 55px;
+  padding-bottom: 2rem;
 }
 .header {
-  height: 36px;
-  padding: 55px 28px 36px 28px;
+  padding: 2rem 2rem 0 2rem;
+
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1.5rem;
 }
 
 .header h1 {
   color: #311337;
-  font-size: 54px;
+  font-size: 3.375rem;
+  font-weight: 700;
 }
 .accordion {
-  padding: 0 28px;
+  padding: 0 2rem;
 }
 .accordion-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  border-bottom: 1px solid #f8f7fd;
+  height: 5rem;
+}
+.accordion hr {
+  height: 2px;
+  width: 100%;
+  border: none;
+  background-color: hsl(275, 100%, 97%);
+}
+/* - White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%) 
+#9B3FC9*/
+.accordion-item:hover {
+  cursor: pointer;
+}
+.accordion-item:hover p {
+  color: #9b3fc9;
 }
 .accordion-item p {
 }
-.accordion .active.accordion-item {
-  border: none;
-}
+
 .answer {
-  color: rgb(62, 60, 63);
-  font-size: 16px;
+  color: hsl(292, 16%, 49%);
+  font-size: 1rem;
   font-weight: 400;
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
 }
 p.question {
-  font-size: 20px;
+  font-size: 1.125rem;
   font-weight: 600;
+}
+@media screen and (max-width: 380px) {
+  .background {
+    background-image: url("./assets/background-pattern-mobile.svg");
+    height: 15rem;
+  }
+  .card {
+    z-index: 600;
+    border-radius: 0.5rem;
+    width: 20rem;
+    background-color: #fff;
+    padding-bottom: 2rem;
+  }
+  .header {
+    padding: 1.75rem 1.75rem 0 1.75rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .header img {
+    height: 1.5rem;
+  }
+
+  .header h1 {
+    color: #311337;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .accordion {
+    padding: 0 1.75rem;
+  }
+  .accordion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  .accordion hr {
+    height: 2px;
+    width: 100%;
+    border: none;
+    background-color: hsl(275, 100%, 97%);
+  }
+  /* - White: hsl(0, 0%, 100%)
+  - Light pink: hsl(275, 100%, 97%)
+  - Grayish purple: hsl(292, 16%, 49%)
+  - Dark purple: hsl(292, 42%, 14%) 
+  #9B3FC9*/
+  .accordion-item:hover {
+    cursor: pointer;
+  }
+  .accordion-item:hover p {
+    color: #9b3fc9;
+  }
+  .accordion-item p {
+  }
+
+  .answer {
+    color: hsl(292, 16%, 49%);
+    font-size: 0.825rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    line-height: 1.25rem;
+  }
+  p.question {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
