@@ -41,8 +41,9 @@ Users should be able to:
 
 - HTML5 
 - CSS
--Javascript(React)
+- Javascript(React)
 
+ 
 ## Author
 
 - Frontend Mentor - [@enesthedad](https://www.frontendmentor.io/profile/enesthedad)
