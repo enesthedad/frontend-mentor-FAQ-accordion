@@ -25,10 +25,12 @@ Users should be able to:
 -See hover and focus states for all interactive elements on the page
 
 ### Screenshot
+<div style="display:flex">
+  <img src="https://pbs.twimg.com/media/GCk_nZnWcAAHIOj?format=jpg&name=4096x4096" alt="desktop-design" height="300" style="border-radius:16px;">
+   <img src="https://pbs.twimg.com/media/GCk_nZqXkAAqPRf?format=jpg&name=large" height="300" style="border-radius:16px;">
+  </div>
+ 
 
-![](https://pbs.twimg.com/media/GCk_nZnWcAAHIOj?format=jpg&name=4096x4096)
-
-![](https://pbs.twimg.com/media/GCk_nZqXkAAqPRf?format=jpg&name=large)
 
 ### Links
 
